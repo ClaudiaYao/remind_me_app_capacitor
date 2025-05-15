@@ -1,0 +1,7 @@
+torch
+numpy
+boto3
+facenet-pytorch
+sqlalchemy
+psycopg2-binary
+openai

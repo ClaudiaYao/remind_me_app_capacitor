@@ -1,0 +1,42 @@
+button {
+    gap: 1px;
+    margin-top: 10px;
+    background-color: #fb8500;
+}
+
+.buttons-default {
+    /* display: ; */
+    justify-content: center;
+}
+
+.buttons-group {
+    display: flex;
+    justify-content: space-between;
+    /* Distributes space between buttons */
+}
+
+.login-button,
+.register-button,
+.upload-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.register-button {
+    background-color: #ffb703;
+    /* Green background for the Register button */
+    color: white;
+}
+
+.login-button {
+    background-color: #219ebc;
+    /* Blue background for the Login button */
+    color: white;
+}
+
+.upload-button {
+    background-color: #f9a811d3;
+    /* Red background for the Upload button */
+    color: white;
+}
