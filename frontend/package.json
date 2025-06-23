@@ -12,6 +12,9 @@
   "dependencies": {
     "@aws-amplify/auth": "^6.11.1",
     "@aws-amplify/core": "^6.10.1",
+    "@capacitor/android": "^7.4.0",
+    "@capacitor/core": "^7.4.0",
+    "@capacitor/ios": "^7.4.0",
     "@mui/material": "^6.4.4",
     "@mui/styled-engine-sc": "^6.4.3",
     "@popperjs/core": "^2.11.8",
@@ -34,6 +37,7 @@
     "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
+    "@capacitor/cli": "^7.4.0",
     "@eslint/js": "^9.19.0",
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.0.3",

@@ -1,7 +1,7 @@
 import React from "react";
 import { RemindeeProfile } from "@/types/remindee";
 import { useNavigate } from "react-router-dom";
-import { Button } from "./ui/button";
+// import { Button } from "./ui/button";
 
 interface PersonCardProps {
   person: RemindeeProfile;
@@ -41,7 +41,7 @@ const RemindeeCard: React.FC<PersonCardProps> = ({ person }) => {
             </div>
           </div>
 
-          <Button
+          <button
             onClick={handleMoreInfoClick}
             className="mt-2 px-3 py-1 bg-blue-50 text-white rounded-md hover:bg-blue-100 transition-colors duration-200 inline-flex items-center text-sm"
           >
@@ -55,7 +55,7 @@ const RemindeeCard: React.FC<PersonCardProps> = ({ person }) => {
             >
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M19 9l-7 7-7-7"></path>
             </svg>
-          </Button>
+          </button>
         </div>
       </div>
 

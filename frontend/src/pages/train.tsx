@@ -1,7 +1,7 @@
 // Upload.tsx
 import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import { trigger_train } from "@/services/upload_train";
 import { useAuth } from "@/hooks/useAuth";
 import { useJob } from "@/hooks/useJob";
@@ -54,13 +54,13 @@ const TrainModel: React.FC = () => {
       )}
 
       <div className="flex justify-center mt-6">
-        <Button
+        <button
           className="flex w-64 justify-center rounded-md bg-yellow-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-yellow-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600"
           disabled={isModelUpdated}
           onClick={handleTrain}
         >
           Train Your AI Assistant
-        </Button>
+        </button>
       </div>
     </div>
   );

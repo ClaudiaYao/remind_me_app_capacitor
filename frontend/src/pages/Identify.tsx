@@ -6,7 +6,7 @@ import { identify, IdentifyResponse, RemindeeInfo } from "@/services/identify";
 import TrainAiModel from "@/components/TrainAiModel";
 import { check_model_exist } from "@/services/upload_train";
 import ChooseSingleImage from "@/components/ChooseSingleImage";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import Instruction from "./Instruction";
 
 const Identify: React.FC = () => {
@@ -89,13 +89,13 @@ const Identify: React.FC = () => {
           {<ChooseSingleImage chosenImage={chosenImage} setChosenImage={setChosenImage} />}
 
           <div className="flex justify-center mt-6">
-            <Button
+            <button
               className="flex w-64 justify-center rounded-md bg-yellow-600 px-3 py-1.5 text-sm/6 font-semibold text-white shadow-xs hover:bg-yellow-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-yellow-600"
               disabled={!chosenImage}
               onClick={handleImageSubmit}
             >
               Identify This Person
-            </Button>
+            </button>
           </div>
 
           <br></br>

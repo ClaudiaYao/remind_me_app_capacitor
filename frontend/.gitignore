@@ -21,3 +21,11 @@ amplifytools.xcconfig
 .secret-*
 **.sample
 #amplify-do-not-edit-end
+
+# Inside ios/
+ios/DerivedData/
+ios/build/
+
+# Inside android/
+android/.gradle/
+android/build/

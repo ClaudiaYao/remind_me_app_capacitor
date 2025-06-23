@@ -5,7 +5,7 @@ import { useSearchParams } from "react-router-dom";
 import { RemindeeSingleRecord } from "@/types/remindee";
 import Login from "@/components/Login";
 import { RemindeeUpdate, RemindeeUpdatePayload, updateRemindeeDetails } from "@/services/profile";
-import { Button } from "@/components/ui/button";
+// import { Button } from "@/components/ui/button";
 import PromptDialog from "@/components/PromptDialog";
 import { useNavigationGuard } from "@/hooks/useNavigationGuard";
 
@@ -188,21 +188,21 @@ const RemindeeDetails: React.FC = () => {
           <p className="mt-2 text-gray-700 !text-left">{remindeeInfoAll?.ai_summary}</p>
         </div>
         <br />
-        <h2 className="mt-4 text-xl font-bold !text-left">Images of {person_name}</h2>
 
-        <div className="text-center py-12 bg-gray-50 rounded-lg">
-          {msg && <p className="font-medium !text-yellow-800 dark:text-yellow-500">{msg}</p>}
-        </div>
+        {/* <div className="text-center py-12 rounded-lg"> */}
+        {msg && <p className="font-medium !text-yellow-800 dark:text-yellow-500">{msg}</p>}
+        {/* </div> */}
 
-        <Button
+        <button
           onClick={handleSubmitChange}
           disabled={updatedItems.every((item) => item === false) && deletedItems.every((item) => item === false)}
           className="mt-2 px-3 py-1 bg-blue-50 text-white rounded-md hover:bg-blue-100 transition-colors duration-200 inline-flex items-center text-sm"
         >
           {" "}
           Submit Change of Remindee Information
-        </Button>
+        </button>
 
+        <h2 className="mt-4 text-xl font-bold !text-left">Images of {person_name}</h2>
         {/* Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {remindeeRecords?.map((item, index) => (
