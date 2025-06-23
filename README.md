@@ -39,7 +39,7 @@ The major difference is:
 # Usage
 
 1. Type command "redis-server" to start redis.
-2. Switch to backend folder, and type "uvicorn main:app --reload"
+2. Switch to backend folder, and type "python3 -m uvicorn main:app --reload"
 3. Switch to frontend folder type "npx cap run ios", and choose one iPhone simulator. Wait for the openning of xcode and test the app in the simulator.
 
 ## Reference:
